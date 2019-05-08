@@ -73,34 +73,34 @@ var vm = new Vue({
 
           //第三行
           resultc1: function () {
-            return this.resultb1 + this.resultb3 + this.resultb7
+            return this.resultb1 + this.resultb3 + this.resultb7 + this.item.needc1
           },
           resultc2: function () {
-            return this.resultb2 +  this.resultb6
+            return this.resultb2 +  this.resultb6 + this.item.needc2
           },
           resultc3: function () {
-            return this.resultb3*2 + this.resultb8 + this.resultb10
+            return this.resultb3*2 + this.resultb8 + this.resultb10 + this.item.needc3
           },
           resultc4: function () {
-            return this.resultb1 + this.resultb4
+            return this.resultb1 + this.resultb4 + this.item.needc4
           },
           resultc5: function () {
-            return this.resultb4*2 + this.resultb5*4 + this.resultb6*2
+            return this.resultb4*2 + this.resultb5*4 + this.resultb6*2 + this.item.needc5
           },
           resultc6: function () {
-            return this.resultb2 + this.resultb6 + this.resultb9
+            return this.resultb2 + this.resultb6 + this.resultb9 + this.item.needc6
           },
           resultc7: function () {
-            return this.resultb3 + this.resultb7*2 + this.resultb9
+            return this.resultb3 + this.resultb7*2 + this.resultb9 + this.item.needc7
           },
           resultc8: function () {
-            return this.resultb1 + this.resultb8*2 + this.resultb10
+            return this.resultb1 + this.resultb8*2 + this.resultb10 + this.item.needc8
           },
           resultc9: function () {
-            return this.resultb2 + this.resultb8 + this.resultb9*2
+            return this.resultb2 + this.resultb8 + this.resultb9*2 + this.item.needc9
           },
           resultc10: function () {
-            return this.resultb4 + this.resultb7 + this.resultb10*2
+            return this.resultb4 + this.resultb7 + this.resultb10*2 + this.item.needc10
           },
     }
 })
