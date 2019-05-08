@@ -110,7 +110,7 @@ var vm = new Vue({
           },
           //第四行
           resultd1: function () {
-            return this.resultc*5 + this.item.needd1
+            return this.resultc5*5 + this.item.needd1
           },
           resultd2: function () {
             return this.resultc6*4 + this.item.needd2
