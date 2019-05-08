@@ -116,6 +116,85 @@
             </li>
         </ul>
         <ul class="text-center">
+            <li>
+                <span class="img_line">图片</span>
+                <span>名字</span>
+                <span>掉落</span>
+                <span>需要的数量</span>
+                <span>需要刷的数量</span>
+            </li>
+            <li>
+                <span class="img_line"><img src="img/niuzhuanchun.png"></span>
+                <span>扭转醇</span>
+                <span>2-9 4-4</span>
+                <span><input type="number" v-model.number="item.needc1"></span>
+                <span>{{resultc1}}</span>
+            </li>
+            <li>
+                <span class="img_line"><img src="img/yanmoshi.png"></span>
+                <span>研磨石</span>
+                <span>3-3 、4-8</span>
+                <span><input type="number" v-model.number="item.needc2"></span>
+                <span>{{resultc2}}</span>
+            </li>
+            <li>
+                <span class="img_line"><img src="img/qingmengkuang.png"></span>
+                <span>轻锰矿</span>
+                <span>3-2、4-7</span>
+                <span><input type="number" v-model.number="item.needc3"></span>
+                <span>{{resultc3}}</span>
+            </li>
+            <li>
+                <span class="img_line"><img src="img/RMA7012.png"></span>
+                <span>RMA70-12</span>
+                <span>2-10、4-9</span>
+                <span><input type="number" v-model.number="item.needc4"></span>
+                <span>{{resultc4}}</span>
+            </li>
+            <li>
+                <span class="img_line"><img src="img/guyuanyanzu.png"></span>
+                <span>固源岩组</span>
+                <span>2-4、4-6</span>
+                <span><input type="number" v-model.number="item.needc5"></span>
+                <span>{{resultc5}}</span>
+            </li>
+            <li>
+                <span class="img_line"><img src="img/quanxinzhuangzhi.png"></span>
+                <span>全新装置</span>
+                <span>3-4、4-10</span>
+                <span><input type="number" v-model.number="item.needc6"></span>
+                <span>{{resultc6}}</span>
+            </li>
+            <li>
+                <span class="img_line"><img src="img/jusuanzhizu.png"></span>
+                <span>聚酸酯组</span>
+                <span>2-6、3-8</span>
+                <span><input type="number" v-model.number="item.needc7"></span>
+                <span>{{resultc7}}</span>
+            </li>
+            <li>
+                <span class="img_line"><img src="img/tangzu.png"></span>
+                <span>糖组</span>
+                <span>2-5、4-2</span>
+                <span><input type="number" v-model.number="item.needc8"></span>
+                <span>{{resultc8}}</span>
+            </li>
+            <li>
+                <span class="img_line"><img src="img/yitiezu.png"></span>
+                <span>异铁组</span>
+                <span>2-8、S4-1</span>
+                <span><input type="number" v-model.number="item.needc9"></span>
+                <span>{{resultc9}}</span>
+            </li>
+            <li>
+                <span class="img_line"><img src="img/tongningjizu.png"></span>
+                <span>酮凝集组</span>
+                <span>4-5</span>
+                <span><input type="number" v-model.number="item.needc10"></span>
+                <span>{{resultc10}}</span>
+            </li>
+        </ul>
+        <ul class="text-center">
                 <li>
                     <span class="img_line">图片</span>
                     <span>名字</span>
@@ -124,74 +203,46 @@
                     <span>需要刷的数量</span>
                 </li>
                 <li>
-                    <span class="img_line"><img src="img/niuzhuanchun.png"></span>
-                    <span>扭转醇</span>
-                    <span>2-9 4-4</span>
+                    <span class="img_line"><img src="img/guyuanyan.png"></span>
+                    <span>固源岩</span>
+                    <span>1-7、S2-12</span>
                     <span><input type="number" v-model.number="item.needc1"></span>
                     <span>{{resultc1}}</span>
                 </li>
                 <li>
-                    <span class="img_line"><img src="img/yanmoshi.png"></span>
-                    <span>研磨石</span>
-                    <span>3-3 、4-8</span>
+                    <span class="img_line"><img src="img/zhuangzhi.png"></span>
+                    <span>装置</span>
+                    <span>S3-4 、1-12</span>
                     <span><input type="number" v-model.number="item.needc2"></span>
                     <span>{{resultc2}}</span>
                 </li>
                 <li>
-                    <span class="img_line"><img src="img/qingmengkuang.png"></span>
-                     <span>轻锰矿</span>
-                     <span>3-2、4-7</span>
-                     <span><input type="number" v-model.number="item.needc3"></span>
+                    <span class="img_line"><img src="img/jusuanzhi.png"></span>
+                    <span>聚酸酯</span>
+                    <span>S3-2、1-8</span>
+                    <span><input type="number" v-model.number="item.needc3"></span>
                     <span>{{resultc3}}</span>
                 </li>
                 <li>
-                    <span class="img_line"><img src="img/RMA7012.png"></span>
-                    <span>RMA70-12</span>
-                    <span>2-10、4-9</span>
+                    <span class="img_line"><img src="img/tang.png"></span>
+                    <span>糖</span>
+                    <span>S3-1、2-2</span>
                     <span><input type="number" v-model.number="item.needc4"></span>
-                     <span>{{resultc4}}</span>
+                    <span>{{resultc4}}</span>
                 </li>
                 <li>
-                    <span class="img_line"><img src="img/guyuanyanzu.png"></span>
-                    <span>固源岩组</span>
-                    <span>2-4、4-6</span>
+                    <span class="img_line"><img src="img/yitie.png"></span>
+                    <span>异铁</span>
+                    <span>S3-3、2-1</span>
                     <span><input type="number" v-model.number="item.needc5"></span>
                     <span>{{resultc5}}</span>
                 </li>
                 <li>
-                    <span class="img_line"><img src="img/quanxinzhuangzhi.png"></span>
-                    <span>全新装置</span>
-                    <span>3-4、4-10</span>
+                    <span class="img_line"><img src="img/tongningji.png"></span>
+                    <span>酮凝集</span>
+                    <span>3-7、S2-1</span>
                     <span><input type="number" v-model.number="item.needc6"></span>
                     <span>{{resultc6}}</span>
-                </li>
-                <li>
-                    <span class="img_line"><img src="img/jusuanzhizu.png"></span>
-                    <span>聚酸酯组</span>
-                    <span>2-6、3-8</span>
-                    <span><input type="number" v-model.number="item.needc7"></span>
-                    <span>{{resultc7}}</span>
-                </li>
-                <li>
-                    <span class="img_line"><img src="img/tangzu.png"></span>
-                    <span>糖组</span>
-                    <span>2-5、4-2</span>
-                    <span><input type="number" v-model.number="item.needc8"></span>
-                    <span>{{resultc8}}</span>
-                </li>
-                <li>
-                    <span class="img_line"><img src="img/yitiezu.png"></span>
-                    <span>异铁组</span>
-                    <span>2-8、S4-1</span>
-                    <span><input type="number" v-model.number="item.needc9"></span>
-                    <span>{{resultc9}}</span>
-                </li>
-                <li>
-                    <span class="img_line"><img src="img/tongningjizu.png"></span>
-                    <span>酮凝集组</span>
-                    <span>4-5</span>
-                    <span><input type="number" v-model.number="item.needc10"></span>
-                    <span>{{resultc10}}</span>
                 </li>
             </ul>
     </main>
