@@ -26,6 +26,12 @@ var vm = new Vue({
            needc8:0,
            needc9:0,
            needc10:0,
+           needd1:0,
+           needd2:0,
+           needd3:0,
+           needd4:0,
+           needd5:0,
+           needd6:0,
         }
     },
     computed:{
@@ -102,6 +108,26 @@ var vm = new Vue({
           resultc10: function () {
             return this.resultb4 + this.resultb7 + this.resultb10*2 + this.item.needc10
           },
+          //第四行
+          resultd1: function () {
+            return this.resultbc*5 + this.item.needd1
+          },
+          resultd2: function () {
+            return this.resultc6*4 + this.item.needd2
+          },
+          resultd3: function () {
+            return this.resultc7*4 + this.item.needd3
+          },
+          resultd4: function () {
+            return this.resultc8*4 + this.item.needd4
+          },
+          resultd5: function () {
+            return this.resultc9*4 + this.item.needd5
+          },
+          resultd6: function () {
+            return this.resultc10*4 + this.item.needd6
+          },
+
     }
 })
 
