@@ -20,19 +20,19 @@
             <li>
                 <span class="img_line"><img src="img/D32.png"></span>
                 <span>D32钢</span>
-                <span><input type="text" v-model="item.needa1"></span>
+                <span><input type="number" v-model.number="item.needa1"></span>
                 <span><input type="text"></span>
             </li>
             <li>
                 <span class="img_line"><img src="img/shuangjinamixinpian.png"></span>
                 <span>双极纳米片</span>
-                <span><input type="text"></span>
+                <span><input type="number" v-model.number="item.needa2"></span>
                 <span><input type="text"></span>
             </li>
             <li>
                 <span class="img_line"><img src="img/juheji.png"></span>
                 <span>聚合剂</span>
-                <span><input type="text"></span>
+                <span><input type="number" v-model.number="item.needa3"></span>
                 <span><input type="text"></span>
             </li>
         </ul>
@@ -48,73 +48,152 @@
                 <span class="img_line"><img src="img/baimachun.png"></span>
                 <span>白马醇</span>
                 <span>4-4</span>
-                <span><input type="text" value></span>
-                <span><input type="text"></span>
+                <span><input type="number" v-model.number="item.needb1"></span>
+                <span>{{resultb1}}</span>
             </li>
             <li>
                 <span class="img_line"><img src="img/wushuiyanmoshi.png"></span>
                 <span>五水研磨石</span>
                 <span>4-8 </span>
-                <span><input type="text"></span>
-                <span><input type="text"></span>
+                <span><input type="number" v-model.number="item.needb2"></span>
+                <span>{{resultb2}}</span>
             </li>
             <li>
                 <span class="img_line"><img src="img/sanshuimengkuang.png"></span>
                  <span>三水锰矿</span>
                  <span>4-7</span>
-                <span><input type="text"></span>
-                <span><input type="text"></span>
+                 <span><input type="number" v-model.number="item.needb3"></span>
+                <span>{{resultb3}}</span>
             </li>
             <li>
                 <span class="img_line"><img src="img/RMA7024.png"></span>
                 <span>RMA70-24</span>
                 <span>4-9</span>
-                <span><input type="text"></span>
-                 <span><input type="text"></span>
+                <span><input type="number" v-model.number="item.needb4"></span>
+                 <span>{{resultb4}}</span>
             </li>
             <li>
                 <span class="img_line"><img src="img/tichunyuanyan.png"></span>
                 <span>提纯源岩</span>
                 <span>4-6</span>
-                <span><input type="text"></span>
-                <span><input type="text"></span>
+                <span><input type="number" v-model.number="item.needb5"></span>
+                <span>{{resultb5}}</span>
             </li>
             <li>
                 <span class="img_line"><img src="img/gailiangzhuangzhi.png"></span>
                 <span>改量装置</span>
                 <span>4-10</span>
-                <span><input type="text"></span>
-                <span><input type="text"></span>
+                <span><input type="number" v-model.number="item.needb6"></span>
+                <span>{{resultb6}}</span>
             </li>
             <li>
                 <span class="img_line"><img src="img/jusuanzhikuai.png"></span>
                 <span>聚酸酯块</span>
                 <span>3-8</span>
-                <span><input type="text"></span>
-                <span><input type="text"></span>
+                <span><input type="number" v-model.number="item.needb7"></span>
+                <span>{{resultb7}}</span>
             </li>
             <li>
                 <span class="img_line"><img src="img/tangjukuai.png"></span>
                 <span>糖聚块</span>
                 <span>4-2</span>
-                <span><input type="text"></span>
-                <span><input type="text"></span>
+                <span><input type="number" v-model.number="item.needb8"></span>
+                <span>{{resultb8}}</span>
             </li>
             <li>
                 <span class="img_line"><img src="img/yitiekuai.png"></span>
                 <span>异铁块</span>
                 <span>S4-1</span>
-                <span><input type="text"></span>
-                <span><input type="text"></span>
+                <span><input type="number" v-model.number="item.needb9"></span>
+                <span>{{resultb9}}</span>
             </li>
             <li>
                 <span class="img_line"><img src="img/tongzhenlie.png"></span>
                 <span>酮阵列</span>
                 <span>4-5</span>
-                <span><input type="text"></span>
-                <span><input type="text"></span>
+                <span><input type="number" v-model.number="item.needb10"></span>
+                <span>{{resultb10}}</span>
             </li>
         </ul>
+        <ul class="text-center">
+                <li>
+                    <span class="img_line">图片</span>
+                    <span>名字</span>
+                    <span>掉落</span>
+                    <span>需要的数量</span>
+                    <span>需要刷的数量</span>
+                </li>
+                <li>
+                    <span class="img_line"><img src="img/niuzhuanchun.png"></span>
+                    <span>扭转醇</span>
+                    <span>2-9 4-4</span>
+                    <span><input type="number" v-model.number="item.needc1"></span>
+                    <span>{{resultc1}}</span>
+                </li>
+                <li>
+                    <span class="img_line"><img src="img/yanmoshi.png"></span>
+                    <span>研磨石</span>
+                    <span>3-3 、4-8</span>
+                    <span><input type="number" v-model.number="item.needc2"></span>
+                    <span>{{resultc2}}</span>
+                </li>
+                <li>
+                    <span class="img_line"><img src="img/qingmengkuang.png"></span>
+                     <span>轻锰矿</span>
+                     <span>3-2、4-7</span>
+                     <span><input type="number" v-model.number="item.needc3"></span>
+                    <span>{{resultc3}}</span>
+                </li>
+                <li>
+                    <span class="img_line"><img src="img/RMA7012.png"></span>
+                    <span>RMA70-12</span>
+                    <span>2-10、4-9</span>
+                    <span><input type="number" v-model.number="item.needc4"></span>
+                     <span>{{resultc4}}</span>
+                </li>
+                <li>
+                    <span class="img_line"><img src="img/guyuanyanzu.png"></span>
+                    <span>固源岩组</span>
+                    <span>2-4、4-6</span>
+                    <span><input type="number" v-model.number="item.needc5"></span>
+                    <span>{{resultc5}}</span>
+                </li>
+                <li>
+                    <span class="img_line"><img src="img/quanxinzhuangzhi.png"></span>
+                    <span>全新装置</span>
+                    <span>3-4、4-10</span>
+                    <span><input type="number" v-model.number="item.needc6"></span>
+                    <span>{{resultc6}}</span>
+                </li>
+                <li>
+                    <span class="img_line"><img src="img/jusuanzhizu.png"></span>
+                    <span>聚酸酯组</span>
+                    <span>2-6、3-8</span>
+                    <span><input type="number" v-model.number="item.needc7"></span>
+                    <span>{{resultc7}}</span>
+                </li>
+                <li>
+                    <span class="img_line"><img src="img/tangzu.png"></span>
+                    <span>糖组</span>
+                    <span>2-5、4-2</span>
+                    <span><input type="number" v-model.number="item.needc8"></span>
+                    <span>{{resultc8}}</span>
+                </li>
+                <li>
+                    <span class="img_line"><img src="img/yitiezu.png"></span>
+                    <span>异铁组</span>
+                    <span>2-8、S4-1</span>
+                    <span><input type="number" v-model.number="item.needc9"></span>
+                    <span>{{resultc9}}</span>
+                </li>
+                <li>
+                    <span class="img_line"><img src="img/tongningjizu.png"></span>
+                    <span>酮凝集组</span>
+                    <span>4-5</span>
+                    <span><input type="number" v-model.number="item.needc10"></span>
+                    <span>{{resultc10}}</span>
+                </li>
+            </ul>
     </main>
     
         <script src="js/vue.js"></script>
